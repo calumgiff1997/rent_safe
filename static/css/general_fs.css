@@ -1,0 +1,91 @@
+@media only screen and (min-width: 840px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .col-1-c {width: 8.33%; margin: 0px 45.835%;}
+  .col-2-c {width: 16.66%; margin:0px 41.66%;}
+  .col-3-c {width: 25%; margin:0px 37.5%;}
+  .col-4-c {width: 33.33%; margin: 0px 33.33%;}
+  .col-5-c {width: 41.66%; margin:0px 29.17%;}
+  .col-6-c {width: 50%; margin: 0px 25%;}
+  .col-7-c {width: 58.33%; margin:0px 20.835%;}
+  .col-8-c {width: 66.66%; margin: 0px 16.66%;}
+  .col-9-c {width: 75%; margin:0px 12.5%;}
+  .col-10-c {width: 83.33%; margin: 0px 8.33%;}
+  .col-11-c {width: 91.66%; margin:0px 4.165%;}
+  .col-12-c {width: 100%; margin: 0px 0px;}
+
+  [class*="col-"] {
+      float:left;
+  }
+
+  html{
+    font-size: 0.95em;
+
+  }
+  h2{
+    font-weight: lighter;
+  }
+  h3{
+    margin: 20px 0px !important;
+  }
+  header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+  }
+  nav{
+    display: inline-block !important;
+  }
+  nav ul{
+    list-style: none outside none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 1.15em;
+  }
+  nav ul li{
+    float: left;
+    padding: 27px 15px;
+
+  }
+  nav ul li a{
+    color:#307167;
+
+  }
+  .row::after {
+      content: "";
+      clear: both;
+      display: block;
+  }
+  .mobile-hidden{
+    display: inline-block;
+  }
+  .hidden{
+    display: none;
+  }
+  .section{
+    padding: 0px !important;
+  }
+  #menu-box{
+    height: 27.9vw;
+  }
+  #menu-icon-div{
+    z-index: 200;
+    padding: 0px 50px;
+  }
+  #cart-icon{
+    padding: 0px 50px;
+  }
+}

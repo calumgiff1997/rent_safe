@@ -3,19 +3,83 @@
 
 <html>
   <head lang="en">
-    <meta charset="UTF-8" />
-    <title>
-      Rango -
-      {% block title_block %}
-        How to Tango with Django!
-      {% endblock %}
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <!-- CSS files -->
+    <link rel="stylesheet" type="text/css"
+     href="{% static 'css/general_mobile.css' %}">
+     <link rel="stylesheet" type="text/css"
+      href="{% static 'css/general_fs.css' %}">
+
+    <title>
+      {% block title_block %}
+
+      {% endblock %}
+      | RentSafe
     </title>
+
   </head>
   <body>
+    <header class='row'>
+      <div id="logo" class="col-6">
+        <h1>RentSafe</h1>
+      </div>
+      <nav class="col-5">
+        <ul class="ul-nav">
+          <li >
+            <a href="">
+              <i class="material-icons">
+                home
+              </i>
+              Home
+            </a>
+          </li>
+          <li >
+            <a href="">
+              <i class="material-icons">
+                security
+              </i>
+              About
+            </a>
+          </li>
+          <li >
+            <a href="">
+              <i class="material-icons">
+                message
+              </i>
+              Contact
+            </a>
+          </li>
+          <li class="accent-box">
+            <a href="">
+              <i class="material-icons">
+                account_circle
+              </i>
+              Log in
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div>
       {% block body_block %}
       {% endblock %}
     </div>
+    <footer>
+
+    </footer>
   </body>
 </html>
